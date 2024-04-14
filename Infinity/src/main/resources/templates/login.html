@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href=founder.css>
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/login.css" rel="stylesheet" type="text/css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <div id='navbar'>
+    <a href="index.html" class="back-to-homepage">
+      <h1 id='nav-top'><img id='icon' src="/images/infinity.png">Infinity</h1>
+    </a>
+    <div id='links'>
+      <a href="explore.html" class="navlist-link">
+        <h2 class="trains hover-underline-animation">Explore</h2>
+      </a>
+      <a href="founder.html">
+        <h2 class="trains hover-underline-animation">Founders</h2>
+      </a>
+      <a href="login.html">
+        <h2 class="trains hover-underline-animation">Log-In</h2>
+      </a>
+      <a href="profile_page.html">
+        <img src="/images/pfp.png" id="profile-pic">
+      </a>
+    </div>
+  </div>
+
+  <img id="logo_main" src="/images/logo.png">
+  <form id="login_form" action="/userLogin" method="post">
+    <input type="text" class="fields" placeholder="Username" style="color:white" name="username"><br>
+    <input type="text" placeholder="Password" style="color:white" class="fields" name="password">
+	<button type="submit" class='fields2'>LogIn</button>
+  </form>
+  <div id="below-form">
+
+    <!-- <div id="submit-div"> -->
+    <!-- </div> -->
+    <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+  </div>
+</body>
+
+</html>

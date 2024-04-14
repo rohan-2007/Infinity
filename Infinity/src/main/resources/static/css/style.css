@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.back-to-homepage {
+  text-decoration: none;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  /* color: #0087ca; */
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0px;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+#logo {
+  margin-left: 10%;
+  height: 70%;
+  width: 60%;
+}
+
+html,
+body {
+  background-repeat: no-repeat;
+  background-size: 600vh 600vh;
+  background-image: linear-gradient(to right, #000000, #3533cd);
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+#nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#icon {
+  width: 32px;
+  height: 32px;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-right: 50px;
+}
+
+#intro-page {
+  display: flex;
+  height: calc(100vh - 78px);
+  font-size: 18px;
+  padding: 0 30px 0 30px;
+}
+
+#left,
+#right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+#search-form {
+  height: 30px
+}
+
+#intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-direction: column;
+}
+
+#hook {
+  font-size: 50px;
+  color: #ccf9ff;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+
+
+.active {
+  text-align: center;
+}
+
+.dance {
+  background-color: #3d4952;
+}
+
+/* .train {
+  font-size: 60px;
+} */
+
+.trains {
+  text-align: right;
+  text-decoration: none;
+}
+
+.trains::after {
+  text-align: right;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.trains:hover::after {
+  /* text-decoration: underline;
+  /* width: 100%; */
+  /* transition: 0.5s; */
+  /* cursor: pointer;  */
+  width: 100%;
+  /* transition: text-decoration 0.5s;  */
+}
+
+#search-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  padding: 0 30px 0 30px;
+}
+
+.header {
+  width: 100%;
+  color: #fff;
+  font-size: 60px;
+  padding: 20px;
+  text-align: center;
+}
+
+#Problem-txt {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+  width: 100vw;
+  padding: 30px;
+}
+
+#search {
+  width: 60%;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+#question {
+  background-color: black;
+}
+
+#results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #181818;
+  border-radius: 16px;
+}
+
+.search-title {
+  font-size: 20px;
+}
+
+.pfp {
+  width: 32px;
+  height: 32px;
+}
+
+#explore-page {
+  height: 100vh;
+}
+
+#explore-cards {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 25px;
+}
+
+.explore-card {
+  background-color: #181818;
+  border-radius: 16px;
+  padding: 70px;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.explore-card:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+#investors-page,
+#aoi-page,
+#answers-page,
+#partners-page,
+#founders-page {
+  height: 100vh;
+}
+
+#profile-pic {
+  height: 50px;
+  width: 50px;
+  margin-right: -50px;
+}
+
+#desc {
+  font-size: 20px;
+}

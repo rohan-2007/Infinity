@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href=founder.css>
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/login.css" rel="stylesheet" type="text/css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <div id='navbar'>
+    <a href="index.html" class="back-to-homepage">
+      <h1 id='nav-top'><img id='icon' src=infinity.png>Infinity</h1>
+    </a>
+    <div id='links'>
+      <a href="explore.html" class="navlist-link">
+        <h2 class="trains hover-underline-animation">Explore</h2>
+      </a>
+      <a href="founder.html">
+        <h2 class="trains hover-underline-animation">Founders</h2>
+      </a>
+      <a href="login.html">
+        <h2 class="trains hover-underline-animation">Log-In</h2>
+      </a>
+      <a href="profile_page.html">
+        <img src="pfp.png" id="profile-pic">
+      </a>
+    </div>
+  </div>
+
+  <img id="logo_main" src="logo.png">
+  <form id="login_form" action="/addUser" method="post">
+    <input type="text" class="fields" placeholder="Enter Email Here" style="color:white" name="email"><br>
+    <input type="text" placeholder="Enter Username" style="color:white" class="fields" name="username"><br>
+    <input type="text" placeholder="Create Password" style="color:white" class="fields" name="password"><br>
+    <input type="text" placeholder="Confirm Password" style="color:white" class="fields" name="confirm_password">
+  
+	  <div id="below-form">
+	
+	    <div id="submit-div">
+	      <button type="submit" class="fields2">Create Account</button>
+	    </div>
+	  </div>
+  </form>
+</body>
+
+</html>
